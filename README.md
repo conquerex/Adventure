@@ -1,4 +1,4 @@
-![모험을 떠나자](http://hangling.org/wp-content/uploads/2016/08/title.png)
+![모험을 떠나자](https://raw.githubusercontent.com/conquerex/Adventure/5521f5786ba0ccc0c05ea01f08ad979fa7f2873d/Chap02_ViewForest_View/app/src/main/res/drawable/37474696_p0.jpg)
 
 # Adventure at Android
 Android World로 여행을 떠난 어떤 모험가의 이야기.
