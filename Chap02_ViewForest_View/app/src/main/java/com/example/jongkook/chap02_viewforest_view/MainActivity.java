@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         // 버튼을 클릭할 때마다 이미지뷰가 사라지고 나타남이 반복된다
         // layout_alignWithParentIfMissing 실습
-        // 이미지가 사라질 경우 텍스트뷰는 부모뷰 기준으로 배치된다
+        // 이미지가 사라질 경우 텍스트뷰는 부모뷰
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
