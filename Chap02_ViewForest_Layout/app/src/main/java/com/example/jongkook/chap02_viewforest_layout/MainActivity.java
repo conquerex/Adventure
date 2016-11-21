@@ -1,9 +1,11 @@
 package com.example.jongkook.chap02_viewforest_layout;
-
+// 안프정 p181~203
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutCompat;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -29,10 +31,24 @@ public class MainActivity extends AppCompatActivity {
         textView.setText("add Text");
         // textView.setGravity(Gravity.RIGHT);
         textView.setTextSize(20);
+        // 2016.11.18 addView 메서드를 사용하여 객체 추가
         mPage1.addView(textView);
 
         mPage2 = findViewById(R.id.page2);
         mPage3 = findViewById(R.id.page3);
+
+        // 2016.12.21 LayoutInflater : XML 리소스를 전개하여 뷰 객체를 만듦
+        /*
+        LayoutInflater inflater = (LayoutInflater)getSystemService(
+                Context.LAYOUT_INFLATER_SERVICE
+        );
+        LinearLayout linearLayout = (LinearLayout)inflater.inflate(R.layout.layout_sample, null);
+        */
+
+        LinearLayout linearLayout = (LinearLayout)View.inflate(this, R.layout.layout_sample, null);
+        mPage1.addView(linearLayout);
+
+
 
         findViewById(R.id.btnPage1).setOnClickListener(mClickLitener);
         findViewById(R.id.btnPage2).setOnClickListener(mClickLitener);
