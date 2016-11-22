@@ -46,7 +46,17 @@ View 소환술을 습득하였습니다.
 ```
 안드로이드 경험치 : (+ 100) 200
 inflate 소환술을 습득하였습니다.
+layout 갑옷을 착용하였습니다
 ```
+
+
+## Chap.04 Output Village
+
+- Custom View를 사용해본다.
+```
+안드로이드 경험치 : (+ 30) 230
+```
+
 
 ## Chap.?? Fragment Sword
 
