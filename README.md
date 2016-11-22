@@ -42,7 +42,11 @@ View 소환술을 습득하였습니다.
 - LinearLayout, FrameLayout, RelativeLayout
 - 코드에서 레이아웃을 만들어 줄 수 있다.
 - Inflation(전개)를 통해 특정뷰를 가져오기
-
+- 레이아웃 파라미터를 물리쳤다.
+```
+안드로이드 경험치 : (+ 100) 200
+inflate 소환술을 습득하였습니다.
+```
 
 ## Chap.?? Fragment Sword
 
