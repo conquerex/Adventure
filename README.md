@@ -56,8 +56,9 @@ layout 갑옷을 착용하였습니다
 - Paint는 구경만 했다.
 - 화가, Bitmap과 만났다.
 - Bitmap의 친구들(텍스트, Path). 셰이더(Shader)는 만나지 않았다.
+- Toast, SoundPool, Audio와 만났다.
 ```
-안드로이드 경험치 : (+ 30) 230
+안드로이드 경험치 : (+ 50) 250
 ```
 
 
