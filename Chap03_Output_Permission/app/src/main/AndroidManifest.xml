@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.jongkook.chap03_output_toast">
-    <uses-permission android:name="android.permission.VIBRATE" />
+    package="com.example.jongkook.chap03_output_permission">
 
     <application
         android:allowBackup="true"

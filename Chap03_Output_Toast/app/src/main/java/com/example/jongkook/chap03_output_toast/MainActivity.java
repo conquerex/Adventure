@@ -1,7 +1,9 @@
 package com.example.jongkook.chap03_output_toast;
 
+import android.content.Context;
 import android.media.AudioManager;
 import android.media.SoundPool;
+import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
     int ddok;
     AudioManager manager;
 
+    // 진동을 위한 변수
+    Vibrator vibrator;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         //              별도 리소스 없이 시스템이 정의해 놓은 소리를 낼 수 있다
         manager = (AudioManager)getSystemService(AUDIO_SERVICE);
 
+        vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+
         findViewById(R.id.button).setOnClickListener(onClickListener);
         findViewById(R.id.button2).setOnClickListener(onClickListener);
         findViewById(R.id.button3).setOnClickListener(onClickListener);
@@ -40,17 +47,28 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // 진동을 시작하면 액티비티 종료해도 계속 진동이 진행
+    // 끝내기 전 반드시 중지 시켜야 함
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        vibrator.cancel();
+    }
+
     Button.OnClickListener onClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             switch (view.getId()){
                 case R.id.button:
                     pool.play(ddok, 1,1,0,0,1);
+                    vibrator.vibrate(500);
                     break;
                 case R.id.button2:
                     // manager.playSoundEffect(AudioManager.FX_KEYPRESS_STANDARD);
                     // manager.playSoundEffect(AudioManager.FX_KEYPRESS_RETURN);
                     manager.playSoundEffect(AudioManager.FX_KEY_CLICK);
+                    // 진동 패턴 넣기
+                    vibrator.vibrate(new long[]{100,50,200,50},0);
                     break;
                 case R.id.button3:
                     str = "Count = " +count++;
@@ -60,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
                     // makeText가 Toast 자체를 리턴
                     toast = Toast.makeText(MainActivity.this, str, Toast.LENGTH_SHORT);
                     toast.show();
+                    vibrator.cancel();
                     break;
                 // 토스트 자체가 아닌 텍스트만 카운트 올리
                 case R.id.button4:

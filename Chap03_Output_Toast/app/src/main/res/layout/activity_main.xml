@@ -11,7 +11,7 @@
     tools:context="com.example.jongkook.chap03_output_toast.MainActivity">
 
     <Button
-        android:text="sound pool"
+        android:text="sound pool - 진동1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -29,7 +29,7 @@
         android:id="@+id/button5" />
 
     <Button
-        android:text="카운트 연속 출력"
+        android:text="카운트 연속 출력 - 진동 종료"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button3"
@@ -47,7 +47,7 @@
         android:layout_alignEnd="@+id/button3" />
 
     <Button
-        android:text="audio manager"
+        android:text="audio manager - 진동2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button2"
