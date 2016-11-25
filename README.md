@@ -57,8 +57,11 @@ layout 갑옷을 착용하였습니다
 - 화가, Bitmap과 만났다.
 - Bitmap의 친구들(텍스트, Path). 셰이더(Shader)는 만나지 않았다.
 - Toast, SoundPool, Audio와 만났다.
+- 만나기 까다로운 Permission을 만났다.
+  - Permission은 [6.0 마시멜로우 권한체크](http://gun0912.tistory.com/55)를 알려주었다.
 ```
 안드로이드 경험치 : (+ 50) 250
+6.0 마시멜로우 권한체크를 습득하였습니다.
 ```
 
 
