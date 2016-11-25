@@ -39,7 +39,7 @@ View 소환술을 습득하였습니다.
 ## Chap.03 Layout Forest
 
 - 복잡한 Layout을 잘 다룰 수 있어야 한다.
-- LinearLayout, FrameLayout, RelativeLayout
+  - LinearLayout, FrameLayout, RelativeLayout
 - 코드에서 레이아웃을 만들어 줄 수 있다.
 - Inflation(전개)를 통해 특정뷰를 가져오기
 - 레이아웃 파라미터를 물리쳤다.
@@ -59,9 +59,11 @@ layout 갑옷을 착용하였습니다
 - Toast, SoundPool, Audio와 만났다.
 - 만나기 까다로운 Permission을 만났다.
   - Permission은 [6.0 마시멜로우 권한체크](http://gun0912.tistory.com/55)를 알려주었다.
+  - 마법 발동 과정 중 onRequestPermissionsResult()이 이해가 가지 않는다.
 ```
 안드로이드 경험치 : (+ 50) 250
 6.0 마시멜로우 권한체크를 습득하였습니다.
+Permission으로부터 마법을 배우는 중입니다. (2016.11.25~)
 ```
 
 
