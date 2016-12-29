@@ -36,7 +36,7 @@ View 소환술을 습득하였습니다.
 ```
 
 
-## Chap.03 Layout Forest
+## Chap.02-1 Layout Forest
 
 - 복잡한 Layout을 잘 다룰 수 있어야 한다.
   - LinearLayout, FrameLayout, RelativeLayout
