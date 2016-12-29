@@ -54,14 +54,14 @@ layout 갑옷을 착용하였습니다
 
 - Custom View를 사용해본다.
 - Paint는 구경만 했다.
-- 화가, Bitmap과 만났다.
+- 화가, `Bitmap`과 만났다.
 - Bitmap의 친구들(텍스트, Path). 셰이더(Shader)는 만나지 않았다.
 - Toast, SoundPool, Audio와 만났다.
-- 만나기 까다로운 Permission을 만났다.
+- 만나기 까다로운 `Permission`을 만났다.
   - Permission은 [6.0 마시멜로우 권한체크](http://gun0912.tistory.com/55)를 알려주었다.
   - 마법 발동 과정 중 onRequestPermissionsResult()이 이해가 가지 않는다.
-  - 위 이슈의 원인 파악이 되었다. 두 개의 장비 중 하나가 6.0 미만이었음을 늦게 깨달아서 마을을 늦게 떠나게 되었다.
-  - onRequestPermissionsResult에 대해 대화하였다.
+  - 위 이슈의 원인 파악이 되었다. 두 개의 장비 중 하나가 6.0 미만이었음을 늦게 깨달아서 마을을 늦게 떠나게 되었다.
+  - onRequestPermissionsResult에 대해 대화하였다.
 ```
 안드로이드 경험치 : (+ 100) 300
 6.0 마시멜로우 권한체크를 습득하였습니다.
@@ -73,6 +73,6 @@ layout 갑옷을 착용하였습니다
 
 - Activity Sword보다 작지만 유용하다
 - 여러 Activity와 겸용(재사용)이 가능하다
-- Fragment끼리 영향을 주기 위해서는 Activity를 경유하는 것이 좋다
+- `Fragment`끼리 영향을 주기 위해서는 Activity를 경유하는 것이 좋다
 - Activity와 유사한 생명주기를 가진다.
 - 이후 더 자세히 다루기로 한다. (2016.11.16)
