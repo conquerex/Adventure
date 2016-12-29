@@ -50,7 +50,7 @@ layout 갑옷을 착용하였습니다
 ```
 
 
-## Chap.04 Output Village
+## Chap.03 Output Village
 
 - Custom View를 사용해본다.
 - Paint는 구경만 했다.
