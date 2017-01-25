@@ -13,8 +13,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Activity는 뷰 생성
+        // View에 대부분 코드를 작성
         view = new Myview(this);
-        setContentView(view);
-        view.arVertex = new ArrayList<Vertex>();
+        view2 = new Myview2(this);
+
+        // 키보드 모드로 변환하라. (키보드 모드만 쓸때)
+        view2.setFocusable(true);
+        // 터치 모드 중에서도 키보드 모드를 사용할 수 있게 하라. (터치,키보드 다중모드 지원할때)
+        view2.setFocusableInTouchMode(true);
+        setContentView(view2);
+        // view.arVertex = new ArrayList<Vertex>();
     }
 }

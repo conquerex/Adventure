@@ -31,6 +31,8 @@ public class Myview2 extends View{
         canvas.drawCircle(mX,mY,16,paint);
     }
 
+    // 해당 메서드를 액티비티에 둬도 동작은 함
+    // back키도 아래 메서드에 적용되기 때문에 뷰가 처리하는 것이 바람직함
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         super.onKeyDown(keyCode, event);
