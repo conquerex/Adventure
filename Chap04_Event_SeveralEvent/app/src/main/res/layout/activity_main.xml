@@ -13,5 +13,27 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Hello World!"
+        android:id="@+id/textFruit"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="Apple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textFruit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/btnApple" />
+
+    <Button
+        android:text="Orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnApple"
+        android:layout_toRightOf="@+id/btnApple"
+        android:layout_toEndOf="@+id/btnApple"
+        android:id="@+id/btnOrange" />
+
 </RelativeLayout>
